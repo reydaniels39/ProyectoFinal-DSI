@@ -1,0 +1,181 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	/*background: #fefefe;*/
+	background: gray;
+}
+
+:root{
+	--fondo1: #272e40;	/*Oscuro*/
+	--fondo2: #32394b;	/*Claro*/
+	--fondo3: #3a4151;	/*Más Claro*/
+
+	--color1: #bac3d2;	/*Blanco*/
+	--color2: #a9aeba;	/*Gris*/
+	--color3: #74d9f7;	/*Celeste*/
+	--color4: #764d93;	/*Morado*/
+
+	--tam1: 35px;
+	--tam2: 30px;
+	--tam3: 25px;
+
+	--grosor1: 100;
+	--grosor2: 300;
+
+	--padding1: 20px;
+
+	--gris: rgba(87, 101, 116, 0.2);
+	--grisclaro: #959aa6;
+	--grisfuerte: #818692;
+}
+.fondo1{
+	background: var(--fondo1) !important;	/*Oscuro*/
+}
+.fondo2{
+	background: var(--fondo2);	
+}
+.fondo3{
+	background: var(--fondo3) !important;
+}
+
+.medio{
+	background: var(--grisclaro) !important;
+}
+.fuerte{
+	background: var(--grisfuerte) !important;
+}
+.fondo4{
+	background: var(--color2) !important;	/*Claro*/
+}
+.tclaro{
+	color: var(--fondo1) !important;
+}
+.toscuro{
+	color: var(--color2) !important;
+}
+
+#calculadora{
+	width: 375px;
+	height: 750px;
+	position: absolute;
+	left: calc(50% - 187.5px);
+	top: calc(50% - 375px);
+	border-radius: 20px;
+	overflow: hidden;
+}
+	#pantalla{
+		width: 100%;
+		height: calc(100% - 470px);
+		padding: var(--padding1);
+		box-sizing: border-box;
+		position: relative;
+		float: left;
+	}
+		#lightmode{
+			position: absolute;
+			height: 45px;
+			width: 110px;
+			left: calc(50% - 55px);
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+			#sun, #moon{
+				font-size: var(--tam3);
+				position: relative;
+				float: left;
+				cursor: pointer;
+				background: rgba(255, 255, 255, 0);
+			}
+			#sun{
+				color: var(--gris);	/*fondo3*/
+				margin-left: 5px;
+			}
+			#sun:hover{
+				color: yellow;
+			}
+			#moon{
+				color: var(--gris);	/*color2*/
+				margin-left: 30px;
+			}
+			#moon:hover{
+				color: #007ec5;
+			}
+				.activo{
+					color: rgba(255, 255, 255, 0.6) !important;
+				}
+		#historial, #resultado{
+			position: relative;
+			float: right;
+			width: 100%;
+			text-align: right;
+			font-weight: var(--grosor3);
+			background: rgba(255, 255, 255, 0);
+		}
+		#historial{
+			color: var(--color1);
+			font-size: var(--tam3);
+			margin-top: calc(100% - 180px);
+		}
+		#resultado{
+			margin-top: 10px;
+			color: var(--color3);
+			font-size: var(--tam1);
+		}
+	#teclado{
+		height: 470px;
+		width: 100%;
+		position: relative;
+		float: left;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		overflow: hidden;
+		padding: var(--padding1);
+		box-sizing: border-box;
+	}
+		.buttons{
+			position: relative;
+			float: left;
+			height: 76.25px;
+			width: 76.25px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			background: rgba(255, 255, 255, 0);
+			border-radius: 50%;
+			cursor: pointer;
+			border: none;
+			font-size: var(--tam2);
+			font-weight: var(--grosor1);
+		}
+		.buttons:hover{
+			color: #ff7a59 !important;
+			border: #ff7a59 solid 1px !important;
+		}
+		.operadores{
+			margin-right: 0px !important;
+			color: var(--color3) !important;
+		}
+		.ultimafila{
+			margin-bottom: 0px !important;
+		}
+		.numbutton{
+			color: var(--color2);
+		}
+			#ce{
+				margin-right: calc(30px + 152.5px);
+				color: var(--color4);
+			}
+			#cero{
+				margin-right: calc(20px + 76.25px);
+			}
+			#igual{
+				color: var(--color1);
+				background: var(--color3) !important;
+				margin-right: 0px !important;
+			}
+			#igual:hover{
+				background: #42b0d0 !important;
+				color: #ff7a59 !important;
+			}

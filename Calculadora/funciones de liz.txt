@@ -1,0 +1,24 @@
+.claro{
+	background: var(--blanco) !important;
+}
+.oscuro{
+	background: var(--negro) !important;
+}
+.tclaro{
+	color: var(--negro) !important;
+}
+.toscuro{
+	color: var(--blanco) !important;
+}
+
+	--azulClaro: #48dbfb;
+	--negro: #222f3e;
+	--morado: #e056fd;
+	--blanco: #c8d6e5;
+	--gris: rgba(87, 101, 116, .2);
+
+	//document.querySelector('body').classList.remove('fondo4');
+	//document.querySelector('body').classList.add('fondo1');
+
+	//document.querySelector('body').classList.add('fondo4');
+	//document.querySelector('body').classList.remove('fondo1');
